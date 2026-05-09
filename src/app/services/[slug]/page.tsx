@@ -68,12 +68,12 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
             </div>
 
             <div className="pt-6 border-t border-accent/50">
-              <Link 
-                href="/contact"
+              <a 
+                href="tel:+917020911752"
                 className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-full font-bold text-lg hover:bg-primary/90 transition-colors shadow-md transform hover:-translate-y-1"
               >
                 Book a Consultation
-              </Link>
+              </a>
             </div>
 
           </div>

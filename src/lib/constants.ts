@@ -1,8 +1,9 @@
 export const CLINIC_INFO = {
-  name: "Dental Clinic",
-  address: "123 Smile Avenue, Dental City, DC 12345",
-  phone: "(555) 123-4567",
-  email: "contact@dentalclinic.com",
+  name: "Geetai Dental Hospital",
+  address: "Malegaon Road, Taroda Naka, Nanded, India, Maharashtra",
+  phone: "070209 11752",
+  email: "GeetaiDentalHospital@Gmail.com",
+  whatsappUrl: "https://wa.me/917020911752",
   workingHours: "Mon-Fri: 8AM - 6PM",
 }
 

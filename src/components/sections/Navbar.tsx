@@ -13,7 +13,7 @@ export function Navbar() {
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
     { name: "Gallery", href: "/gallery" },
-    { name: "Contact", href: "/contact" },
+    { name: "Contact", href: CLINIC_INFO.whatsappUrl },
   ];
 
   return (
@@ -36,12 +36,12 @@ export function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Link
-              href="/contact"
+            <a
+              href="tel:+917020911752"
               className="bg-primary text-primary-foreground px-6 py-2.5 rounded-full font-medium hover:bg-primary/90 transition-colors"
             >
               Book Appointment
-            </Link>
+            </a>
           </div>
 
           <div className="md:hidden flex items-center">
@@ -75,13 +75,12 @@ export function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <Link
-                href="/contact"
-                onClick={() => setIsOpen(false)}
+              <a
+                href="tel:+917020911752"
                 className="block text-center mt-4 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium"
               >
                 Book Appointment
-              </Link>
+              </a>
             </div>
           </motion.div>
         )}

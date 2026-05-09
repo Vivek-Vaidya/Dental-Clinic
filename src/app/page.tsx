@@ -66,12 +66,12 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4"
               >
-                <Link 
-                  href="/contact"
+                <a
+                  href="tel:+917020911752"
                   className="bg-primary text-primary-foreground px-8 py-4 rounded-full font-medium text-lg hover:bg-primary/90 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 w-full sm:w-auto"
                 >
                   Book Your Visit
-                </Link>
+                </a>
                 <Link 
                   href="/services"
                   className="bg-white text-foreground border border-accent px-8 py-4 rounded-full font-medium text-lg hover:bg-accent transition-colors w-full sm:w-auto inline-flex justify-center items-center"

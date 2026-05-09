@@ -24,11 +24,15 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 flex-shrink-0" />
-                <span>{CLINIC_INFO.phone}</span>
+                <a href="tel:+917020911752" className="hover:text-white transition-colors">
+                  {CLINIC_INFO.phone}
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 flex-shrink-0" />
-                <span>{CLINIC_INFO.email}</span>
+                <a href={`mailto:${CLINIC_INFO.email}`} className="hover:text-white transition-colors">
+                  {CLINIC_INFO.email}
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Clock className="w-5 h-5 flex-shrink-0" />
@@ -43,8 +47,8 @@ export function Footer() {
               <Link href="/" className="hover:text-white transition-colors">Home</Link>
               <Link href="/services" className="hover:text-white transition-colors">Services</Link>
               <Link href="/gallery" className="hover:text-white transition-colors">Gallery</Link>
-              <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
-              <Link href="/contact" className="hover:text-white transition-colors">Book Appointment</Link>
+              <a href={CLINIC_INFO.whatsappUrl} target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Contact</a>
+              <a href="tel:+917020911752" className="hover:text-white transition-colors">Book Appointment</a>
             </div>
           </div>
 
